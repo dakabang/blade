@@ -60,10 +60,10 @@ public class SampleContainer implements Container {
     }
     
     public static SampleContainer single() {
-        return DefaultContainerHoder.single;
+        return DefaultContainerHolder.single;
     }
     
-    private static class DefaultContainerHoder {
+    private static class DefaultContainerHolder {
         private static final SampleContainer single = new SampleContainer();
     }
 
