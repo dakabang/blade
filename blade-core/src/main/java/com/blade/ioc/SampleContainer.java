@@ -157,9 +157,7 @@ public class SampleContainer implements Container {
         
 		//非抽象类、接口
 		if (!Modifier.isAbstract(clazz.getModifiers()) && !clazz.isInterface()) {
-			
 		    object = ReflectKit.newInstance(clazz);
-		    
 		    put(name, object);
 		    //实现的接口对应存储
 		    if(clazz.getInterfaces().length > 0){

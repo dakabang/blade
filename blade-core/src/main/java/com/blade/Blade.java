@@ -57,7 +57,7 @@ public class Blade {
 	/**
      * 框架是否已经初始化
      */
-    boolean isInit = false;
+	volatile boolean isInit = false;
     
     /**
      * blade全局初始化对象，在web.xml中配置，必须
